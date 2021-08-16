@@ -20,4 +20,6 @@ if not isAuth:
         isAuth = True
 
 if isAuth:
-    st.header('Создание отчета')
+    with st.form(key='my_form'):
+        st.header('Создание отчета')
+        st.subheader('Выбор промежутка')
