@@ -23,4 +23,6 @@ if isAuth:
     with st.form(key='my_form'):
         st.header('Создание отчета')
         st.subheader('Выбор промежутка')
-        st.button('Создать')
+        text_input = st.text_input(label='Выберите промежуток')
+        submit_button = st.form_submit_button(label='Создать')
+        #st.button('Создать')
