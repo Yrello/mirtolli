@@ -11,7 +11,7 @@ st.write('''
 # Создание отчета ДДС
 ''')
 
-passwd = st.text_input()
+passwd = st.text_input('Пароль')
 st.button('Войти')
 
 if login(passwd):
