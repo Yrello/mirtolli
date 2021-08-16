@@ -1,7 +1,10 @@
 import streamlit as st
+
 isAuth = False
-def login(a):
-    if a == '1':
+
+
+def login(login, psswd):
+    if login == st.secrets["db_username"] and psswd == st.secrets["db_password"]:
         return True
     else:
         return False
@@ -12,10 +15,11 @@ st.write('''
 ''')
 
 if not isAuth:
-    passwd = st.text_input('Пароль',type='password')
+    login = st.text_input('Логин')
+    passwd = st.text_input('Пароль', type='password')
     st.button('Войти')
 
-    if login(passwd):
+    if login(login, passwd):
         st.success('Успешно')
         isAuth = True
 
@@ -25,4 +29,4 @@ if isAuth:
         st.subheader('Выбор промежутка')
         text_input = st.text_input(label='Выберите промежуток')
         submit_button = st.form_submit_button(label='Создать')
-        #st.button('Создать')
+        # st.button('Создать')
