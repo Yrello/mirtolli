@@ -23,3 +23,4 @@ if isAuth:
     with st.form(key='my_form'):
         st.header('Создание отчета')
         st.subheader('Выбор промежутка')
+        st.button('Создать')
