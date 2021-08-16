@@ -12,7 +12,7 @@ st.write('''
 ''')
 
 if not isAuth:
-    passwd = st.text_input('Пароль')
+    passwd = st.text_input('Пароль',type='password')
     st.button('Войти')
 
     if login(passwd):
