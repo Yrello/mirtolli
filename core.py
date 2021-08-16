@@ -16,7 +16,7 @@ if not isAuth:
     st.button('Войти')
 
     if login(passwd):
-        st.text('Успешно')
+        st.success('Успешно')
         isAuth = True
 
 if isAuth:
