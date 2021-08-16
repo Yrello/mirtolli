@@ -16,11 +16,11 @@ st.write('''
 
 if not isAuth:
     with st.form(key='login_form'):
-        login = st.text_input('Логин')
+        user = st.text_input('Логин')
         passwd = st.text_input('Пароль', type='password')
         but = st.form_submit_button(label='Войти')
 
-    if login(login, passwd):
+    if login(user, passwd):
         st.success('Успешно')
         isAuth = True
 
