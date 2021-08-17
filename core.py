@@ -10,7 +10,7 @@ def login(login, psswd):
         return False
 
 def make_report():
-    print('1000')
+    print('100')
 
 st.write('''
 # Создание отчета ДДС
