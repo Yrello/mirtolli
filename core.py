@@ -29,5 +29,7 @@ if isAuth:
         st.header('Создание отчета')
         st.subheader('Выбор промежутка')
         text_input = st.text_input(label='Выберите промежуток')
+        first_date = st.date_input()
+        second_date = st.date_input()
         submit_button = st.form_submit_button(label='Создать')
         # st.button('Создать')
