@@ -10,7 +10,7 @@ def login(login, psswd):
         return False
 
 def make_report():
-    print('100')
+    print('1000')
 
 st.write('''
 # Создание отчета ДДС
@@ -35,5 +35,5 @@ if isAuth:
         #text_input = st.text_input(label='Выберите промежуток')
             first_date = st.date_input(label='Начало')
             second_date = st.date_input(label='Конец')
-        submit_button = st.form_submit_button(label='Создать',key=make_report)
+        submit_button = st.form_submit_button(label='Создать')
         # st.button('Создать')
